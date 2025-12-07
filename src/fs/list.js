@@ -10,10 +10,7 @@ const list = async () => {
 
   try {
     fs.readdir(filesForList, 'utf-8', (error, data) => {
-      if (error) {
-        throw Error(throwError);
-      }
-
+      if (error) throw Error(throwError);
       console.log(data)
     }) 
   } catch (error) {

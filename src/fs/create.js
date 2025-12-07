@@ -10,7 +10,10 @@ const create = async () => {
   }
 
   try {
-    fs.writeFileSync(fileToCreate, content)
+    fs.writeFileSync(fileToCreate, content, (error, data) => {
+      if (!error) throw Error(throwError);
+      console.log(data)
+    })
   } catch (error) {
     console.log(error)
   }
