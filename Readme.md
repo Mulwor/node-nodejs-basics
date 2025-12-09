@@ -9,19 +9,17 @@
 
 1. ~~File system - завершено~~
 2. ~~Command line interface(src/cli)~~
-
-
-### Modules(src/modules)
-
-You should refactor file (you can add additional imports if needed)
-
-- `cjsToEsm.cjs` - rewrite it to it's equivalent in ECMAScript notation (and rename it to `esm.mjs`)
+3. ~~### Modules(src/modules)~~
 
 ### Hash (src/hash)
 
 You should implement several functions in dedicated files
 
-- `calcHash.js` - implement function that calculates SHA256 hash for file `fileToCalculateHashFor.txt` and logs it into console as `hex` using Streams API
+- `calcHash.js` - implement function that calculates SHA256 hash for file `fileToCalculateHashFor.txt` and logs it into console as `hex` using Streams API;
+
+- `calcHash.js` - реализуйте функцию, которая вычисляет хэш SHA256 для файла `fileToCalculateHashFor.txt` и выводит его в консоль в формате hex (шестнадцатеричном), используя Streams API.
+
+
 
 ### Streams (src/streams)
 
