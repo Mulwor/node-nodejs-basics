@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const fileToRead = './files/fileToRead.txt';
+const fileToRead = new URL('./files/fileToRead.txt', import.meta.url)
 const throwError = 'FS operation failed';
 
 const read = async () => {

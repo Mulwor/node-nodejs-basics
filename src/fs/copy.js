@@ -1,7 +1,8 @@
 import fs from 'fs';
+import path from 'path';
 
-const files = './files';
-const copy_files = './files_copy';
+const files = path.join('files'); 
+const copy_files = path.join('files_copy');
 const throwError = 'FS operation failed';
 
 const copy = async () => {

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const fileToRemove = './files/fileToRemove.txt';
+const fileToRemove = new URL('./files/fileToRemove.txt', import.meta.url)
 const throwError = 'FS operation failed';
 
 const remove = async () => {

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const filesForList = './files';
+const filesForList = new URL('./files', import.meta.url)
 const throwError = 'FS operation failed';
 
 const list = async () => {

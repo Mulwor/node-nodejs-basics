@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const fileToCreate = './files/fresh.txt';
+const fileToCreate = new URL('./files/fresh.txt', import.meta.url)
 const content = 'I am fresh and young';
 const throwError = 'FS operation failed';
 

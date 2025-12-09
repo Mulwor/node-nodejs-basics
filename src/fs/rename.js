@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const oldWrongName = './files/wrongFilename.txt';
+const oldWrongName = path.join('files', 'wrongFilename.txt'); 
 const newName = './files/properFilename.md';
 const throwError = 'FS operation failed';
 
