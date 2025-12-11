@@ -7,23 +7,8 @@
 2. ~~Command line interface(src/cli)~~
 3. ~~Modules(src/modules)~~
 4. ~~Hash (src/hash)~~
-
-
-### Streams (src/streams)
-
-You should implement several functions in dedicated files
-
-- `transform.js` - implement function that reads data from `process.stdin`, reverses text using Transform Stream and then writes it into `process.stdout`
-
-
-`transform.js` — реализуйте функцию, которая читает данные из `process.stdin, переворачивает текст` с помощью Transform Stream (трансформирующего потока) и затем записывает результат в `process.stdout`
-
-### Zlib (src/zip)
-
-You should implement several functions in dedicated files
-
-- `compress.js` - implement function that compresses file `fileToCompress.txt` to `archive.gz` using `zlib` and Streams API
-- `decompress.js` - implement function that decompresses `archive.gz` back to the `fileToCompress.txt` with same content as before compression using `zlib` and Streams API
+5. ~~Streams (src/streams)~~
+6. ~~Zlib (src/zip) ~~
 
 ### Worker Threads (src/wt)
 
