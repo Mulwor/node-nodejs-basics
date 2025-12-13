@@ -8,18 +8,8 @@
 3. ~~Modules(src/modules)~~
 4. ~~Hash (src/hash)~~
 5. ~~Streams (src/streams)~~
-6. ~~Zlib (src/zip) ~~
-
-### Worker Threads (src/wt)
-
-You should implement several functions in dedicated files
-
-- `worker.js` - extend given function to work with data received from main thread and implement function which sends result of the computation to the main thread
-- `main.js` - implement function that creates number of worker threads (equal to the number of host machine logical CPU cores) from file `worker.js` and able to send data to those threads and to receive result of the computation from them. You should send incremental number starting from `10` to each `worker`. For example: on host machine with **4** cores you should create **4** workers and send **10** to first `worker`, **11** to second `worker`, **12** to third `worker`, **13** to fourth `worker`. After all workers will finish, function should log array of results into console. The results are array of objects with 2 properties:
-  - `status` - `'resolved'` in case of successfully received value from `worker` or `'error'` in case of error in `worker`
-  - `data` - value from `worker` in case of success or `null` in case of error in worker
-
-The results in the array must be in the same order that the workers were created
+6. ~~Zlib (src/zip)~~
+7. ~~Worker Threads (src/wt)~~
 
 ### Child Processes (src/cp)
 
@@ -28,3 +18,10 @@ You should implement several functions in dedicated files
 - `cp.js` - implement function `spawnChildProcess` that receives array of arguments `args` and creates child process from file `script.js`, passing these `args` to it. This function should create IPC-channel between `stdin` and `stdout` of master process and child process:
   - child process `stdin` should receive input from master process `stdin`
   - child process `stdout` should send data to master process `stdout`
+
+Вам необходимо реализовать несколько функций в отдельных файлах:
+
+- `cp.js` - реализуйте функцию `spawnChildProcess`, которая получает массив аргументов args и создает дочерний процесс из файла `script.js`, передавая ему эти args. Эта функция должна создать IPC-канал между `stdin` и `stdout` основного процесса и дочернего процесса:
+- `stdin` дочернего процесса должен получать ввод из `stdin` основного процесса
+- `stdout` дочернего процесса должен отправлять данные в `stdout` основного процесса
+
